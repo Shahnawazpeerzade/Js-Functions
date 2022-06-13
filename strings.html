@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Strings and Strings methods,search, and templates</title>
+
+</head>
+<body>
+
+	<!--Strings start-->
+
+	<h1>Strings</h1>
+
+	<h1 id ="string1">Strings</h1>
+	<script type="text/javascript">
+		let a1='My self "Shahnawaz"';
+		let a2= "My Big Brother 'Noor'";
+		let a3= "My Younger Brother Shaheed";
+		document.getElementById("string1").innerHTML=
+		a1+"<br>"+a2+"<br>"+a3;
+
+	</script>
+
+
+	<h2 id="string2"></h2>
+	<script type="text/javascript">
+		
+		let text ="It\'s my webpage.";
+		document.getElementById("string2").innerHTML=text;
+	</script>
+	<!--Strings ends here-->
+
+	<!-- Strings Methods start here-->
+
+
+	<h1>String Method</h1>
+
+
+
+
+	<p id="String3"></p>
+
+
+<script>
+let str = "Apple, Banana, Kiwi";
+document.getElementById("String3").innerHTML = str.substr(7,6);
+</script>
+
+<p>Convert string to lower case:</p>
+<button onclick="myFunction()">Try it</button>
+
+<h1 id="string4">Shahnawaz!</h1>
+
+<script type="text/javascript">
+	function myFunction() {
+		let text = document.getElementById("string4").innerHTML;
+		document.getElementById("string4").innerHTML =
+		text.toLowerCase();
+
+	}
+</script>
+
+<!-- Strings Methods  ends here-->
+
+<!--String search start here-->
+
+<h1>String Search</h1>
+
+<p id="string5"></p>
+
+<script>
+let str1 = "Please locate where 'locate' occurs!";
+document.getElementById("string5").innerHTML = str1.search("where");
+</script>
+<!--String search ends here-->
+
+
+<!--String Template start here-->
+<h1>String Template</h1>
+
+<p id="string6"></p>
+
+<p>Template literals are not supported in Internet Explorer.</p>
+
+<script>
+let firstName = "shahnawaz";
+let lastName = "Peerzade";
+
+let text1 = `Welcome ${firstName} ${lastName}!`;
+
+document.getElementById("string6").innerHTML = text1;
+</script>
+
+<!--String Template ends here-->
+
+</body>
+</html>

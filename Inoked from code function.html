@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Invoked from js code function</title>
+	
+</head>
+<body>
+	<!--Function Invoked from the Js Code start here-->
+
+
+		<h1>Function Invoked from the Js Code</h1>
+
+
+<p id="function"></p>
+
+<script type="text/javascript">
+	function myFunction(s1,s2,s3,s4,s5,s6){
+		return s1*s2+s3+s4-s5/s6
+
+
+
+	}
+	document.getElementById("function").innerHTML= myFunction(4,9,10,15,10,5);
+</script>
+
+<!--Function Invoked from the Js Code ends here-->
+
+
+<!--Automatic function Start from here-->
+
+
+<h1>Functions can be invoked automatically without being called:</h1>
+
+<p id="function1"></p>
+
+<script>
+(function () {
+  document.getElementById("function1").innerHTML = "Hello I am Shahnawaz Peerzade! Welcome to My Webpage ";
+})();
+</script>
+
+
+<!--Automatic function ends here-->
+
+</body>
+</html>
+	
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Arrays and methods,sorts,array iterations, const</title>
+	
+</head>
+<body>
+
+	<!--Arrays start here-->
+	<h1>Arrays</h1>
+
+
+	<button onclick="myFunction()">Try it</button>
+
+<p id="array1"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  fruits[fruits.length] = "Anjer";
+  document.getElementById("array1").innerHTML = fruits;
+}
+</script>
+
+ <h1 id="array2"></h1>
+ <script type="text/javascript">
+ 	const fruits1=["Banana","Apple","Orange"];
+ 	document.getElementById("array2").innerHTML=fruits.length;
+ </script>
+
+ <!--Arrays ends here-->
+
+ <!--Arrays method start here-->
+<h1>Array Methods</h1>
+
+ <p id="array3"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("array3").innerHTML = fruits.join(" * ");
+</script>
+
+<!--Arrays method ends here-->
+
+<!--Arrays sort start here-->
+
+
+<p id="array4"></p>
+<p id="array5"></p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("array4").innerHTML = points;  
+
+points.sort(function(a, b){return a - b});
+document.getElementById("array5").innerHTML = points;
+</script>
+
+<!--Arrays sort ends here-->
+
+<!--Arrays Iteration start here-->
+<h1>Array Iteration </h1>
+<p id="array6"></p>
+
+<script>
+const numbers = [45, 4, 9, 16, 25];
+
+let txt = "";
+numbers.forEach(myFunction);
+document.getElementById("array6").innerHTML = txt;
+
+function myFunction(value) {
+  txt += value + "<br>"; 
+}
+</script>
+
+<!--Array Iteration ends here-->
+
+
+<!--Array const start here-->
+<h1>Array Const</h1>
+<p id="array7"></p>
+
+<script>
+var cars = ["Saab", "Volvo", "BMW"];
+// Here cars[0] is "Saab"
+{  
+  var cars = ["Toyota", "Volvo", "BMW"]; 
+  // Here cars[0] is "Toyota"
+}
+// Here cars[0] is "Toyota"
+document.getElementById("array7").innerHTML = cars[0];
+</script>
+
+
+
+	
+</body>
+</html>
